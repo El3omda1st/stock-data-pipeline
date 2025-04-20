@@ -1,0 +1,12 @@
+stock_project:
+  outputs:
+    dev:
+      dbname: finance_project
+      host: postgres
+      pass: airflow
+      port: 5432
+      schema: public
+      threads: 4
+      type: postgres
+      user: airflow
+  target: dev

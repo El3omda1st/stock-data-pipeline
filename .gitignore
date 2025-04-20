@@ -1,0 +1,54 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+logs/
+
+# Airflow related
+airflow.db
+airflow.cfg
+unittests.cfg
+.dags_folder/
+.airflow/
+
+# DBT build and cache folders
+dbt/stock_project/target/
+dbt/stock_project/dbt_packages/
+dbt/stock_project/logs/
+dbt/logs/
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker runtime files
+*.pid
+
+# Local data or temporary CSVs
+*.parquet
+*.db
+*.sqlite
+stock_data_raw.csv
+stock_data_cleaned.csv
+
+# DBT artifacts
+dbt/stock_project/manifest.json
+dbt/stock_project/run_results.json
+dbt/stock_project/graph_summary.json
+dbt/stock_project/graph.gpickle
+dbt/stock_project/semantic_manifest.json
+dbt/stock_project/partial_parse.msgpack
+
+# Jupyter/IPython checkpoints (if any)
+.ipynb_checkpoints/

@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: finance
+    database: finance_project
+    schema: public
+    tables:
+      - name: stock_prices
+
+models:
+  - name: stg_stock_prices
+    description: "Cleaned and typed stock prices data"
+    columns:
+      - name: date
+        description: "Date of the stock record"
+        tests:
+          - not_null
+      - name: company
+        description: "Stock ticker symbol"
+        tests:
+          - not_null
+      - name: open
+      - name: high
+      - name: low
+      - name: close
+      - name: volume
