@@ -97,6 +97,3 @@ You can view the output from the DBT models in your PostgreSQL database and visu
 ├── logs/                     # Airflow logs
 └── README.md                 # Project documentation
 ```
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
